@@ -1,0 +1,59 @@
+[project]
+name = "autonomous-sag-network"
+version = "0.27.0"
+description = "High-fidelity autonomous Space-Air-Ground network engineering testbed"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.7,<3",
+  "PyYAML>=6.0,<7",
+  "sgp4>=2.27,<3",
+]
+
+[project.optional-dependencies]
+physical-sdr = [
+  "numpy>=1.26,<3",
+  "SoapySDR>=0.8,<1",
+]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.6,<1",
+  "mypy>=1.11,<2",
+  "types-PyYAML>=6.0,<7",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+mypy_path = "src"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["sag_network"]
+from-first = false
+force-sort-within-sections = false
+order-by-type = false
+[tool.ruff.lint.per-file-ignores]
+"scripts/run_phase13_resource_management.py" = ["I001"]
+"scripts/run_phase14_interference.py" = ["I001"]
+"scripts/run_phase6_mobility.py" = ["I001"]
+"scripts/run_phase7_ground_network.py" = ["I001"]
+"scripts/run_phase8_air_network.py" = ["I001"]
+"scripts/run_phase9_unified_network.py" = ["I001"]
+"tests/test_cross_domain_helper.py" = ["I001"]
+"tests/test_unified.py" = ["I001"]
+"src/sag_network/decision/engine.py" = ["I001"]
+"scripts/run_phase25_real_ephemeris.py" = ["I001"]
+"src/sag_network/ephemeris/frames.py" = ["I001"]
+"src/sag_network/ephemeris/sgp4.py" = ["I001"]
+"tests/test_ephemeris.py" = ["I001"]
+"src/sag_network/trajectory/models.py" = ["I001"]
+"tests/test_trajectory.py" = ["I001"]
+

@@ -1,0 +1,14 @@
+Phase 27 — Real UAV/HAPS Mobility Data
+
+The core project dependencies are unchanged. The phase consumes external trajectory files through src/sag_network/trajectory.
+
+Real UAV source:
+https://github.com/ssciancalepore/orion-data
+
+The bundled sample is a small excerpt of ORION allowed_traj_1.txt with a separate third-party license notice. For full experiments, obtain the authoritative upstream file and preserve its attribution/license.
+
+Run:
+ruff check .
+mypy src
+pytest
+python scripts\run_phase27_real_aerial_mobility.py

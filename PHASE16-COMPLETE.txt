@@ -1,0 +1,6 @@
+Autonomous Predictive Space-Air-Ground Network
+Phase 16 — Telemetry & Real-Time State
+
+This archive is a complete project snapshot through Phase 16.
+Use it as the canonical baseline for Phase 17.
+No overlay merge is required.

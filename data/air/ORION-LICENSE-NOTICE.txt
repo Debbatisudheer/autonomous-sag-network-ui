@@ -1,0 +1,9 @@
+Third-party data notice
+
+This file is a small excerpt of the public ORION real-drone trajectory dataset.
+Source repository: https://github.com/ssciancalepore/orion-data
+Source file: allowed_traj_1.txt
+Repository license: GPL-3.0
+
+The source repository describes these records as data gathered from real drone flights.
+This project keeps the third-party data notice separate from the project's own source-code license.

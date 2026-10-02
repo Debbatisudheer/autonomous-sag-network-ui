@@ -1,0 +1,8 @@
+Phase 18 — AI Decision Engine
+
+Complete: deterministic, explainable decision baseline with pluggable policy interface.
+
+Core path:
+Predictive warnings -> policy proposals -> feasibility checks -> utility ranking -> bounded decision selection -> explanation.
+
+The baseline is intentionally not presented as a trained machine-learning model. A DecisionPolicy adapter can later be replaced by a learned model without changing the decision-domain contracts.

@@ -1,0 +1,29 @@
+PHASE 25 — REAL SATELLITE EPHEMERIS INTEGRATION
+
+Implemented on top of the locked Phase 24 baseline.
+
+Real-data path:
+CelesTrak GP → TLE/OMM validation → SGP4 → TEME → ECEF → existing satellite link candidate path.
+
+Included:
+- TLE checksum validation and parsing
+- TLE epoch handling
+- OMM JSON/CSV parsing
+- SGP4 provider contract
+- CelesTrak refresh client
+- TEME/ECEF conversion with GMST
+- relative simulation-time adapter
+- real-ephemeris satellite candidate integration
+- analytical-model reference comparison
+- real ISS TLE fixture
+
+The bundled fixture is a point-in-time input. Refresh it before operational experiments.
+
+Dependency:
+sgp4>=2.27,<3
+
+Validation in build environment:
+269 tests passed
+compileall passed
+
+Real SGP4 numerical propagation requires the sgp4 dependency to be installed in the execution environment.

@@ -1,0 +1,24 @@
+{
+  "release_id": "autonomous-sag-network-1.0.0",
+  "version": "1.0.0",
+  "phase": "55",
+  "source_file_count": 192,
+  "test_file_count": 57,
+  "source_tree_fingerprint": "6572d276a47866d6a5573af0eba51492ea59fbeeab6d9c6bf6f550c269afda21",
+  "phase54_benchmark_fingerprint": "089bddd7512758b24f2a4c0798a5f3833cd8a9035493dda571d136816dbeabc4",
+  "python_version": "3.14.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "evidence_class": "software/research testbed; synthetic/offline benchmark evidence explicitly labeled",
+  "network_mutation": false,
+  "excluded_artifacts": [
+    "*.pyc",
+    "*.pyo",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__"
+  ],
+  "deterministic": true,
+  "release_fingerprint": "e283d8f82b1e24791ee681337a498be4f9b6f4689a668d56e96e6eaa856fb1f0"
+}

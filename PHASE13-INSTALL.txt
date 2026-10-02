@@ -1,0 +1,16 @@
+PHASE 13 ADDITIVE OVERLAY
+
+This archive contains ONLY new Phase 13 files.
+It intentionally does not contain the existing Phase 1-12 files.
+
+Extract/merge this archive into your CURRENT canonical project root.
+No existing Phase 1-12 source file is included here to overwrite your validated baseline.
+
+After extraction run:
+  pytest
+  ruff check .
+  mypy src
+  python scripts\run_phase13_resource_management.py
+
+The project metadata version is intentionally not modified in this additive overlay.
+After the Phase 13 quality gate is clean, the project version can be bumped from 0.12.0 to 0.13.0 as a separate controlled change.

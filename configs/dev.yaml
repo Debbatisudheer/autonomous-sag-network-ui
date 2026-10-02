@@ -1,0 +1,12 @@
+simulation:
+  seed: 42
+  duration_seconds: 60
+  step_seconds: 1
+
+environment:
+  frequency_hz: 3500000000
+  bandwidth_hz: 20000000
+  noise_figure_db: 5
+  tx_power_dbm: 30
+  tx_gain_dbi: 15
+  rx_gain_dbi: 0

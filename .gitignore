@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.pyre/
+.pytype/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local configuration / secrets
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+build/
+dist/
+
+# Project runtime outputs
+artifacts/
+outputs/
+logs/
+
+# Large generated simulation data
+*.parquet
+*.arrow
+*.feather

@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "name": "ground-reference-india",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "hyderabad",
+      "properties": {"site_id": "hyd-ref", "name": "Hyderabad reference point", "feature_type": "city"},
+      "geometry": {"type": "Point", "coordinates": [78.4867, 17.3850, 540.0]}
+    },
+    {
+      "type": "Feature",
+      "id": "bengaluru",
+      "properties": {"site_id": "blr-ref", "name": "Bengaluru reference point", "feature_type": "city"},
+      "geometry": {"type": "Point", "coordinates": [77.5946, 12.9716, 920.0]}
+    },
+    {
+      "type": "Feature",
+      "id": "chennai",
+      "properties": {"site_id": "maa-ref", "name": "Chennai reference point", "feature_type": "city"},
+      "geometry": {"type": "Point", "coordinates": [80.2707, 13.0827, 6.0]}
+    },
+    {
+      "type": "Feature",
+      "id": "pune",
+      "properties": {"site_id": "pune-ref", "name": "Pune reference point", "feature_type": "city"},
+      "geometry": {"type": "Point", "coordinates": [73.8567, 18.5204, 560.0]}
+    }
+  ]
+}

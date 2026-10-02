@@ -1,0 +1,443 @@
+{
+  "release_id": "autonomous-sag-network-2.0.0",
+  "version": "2.0.0",
+  "phase": "80",
+  "status": "pass",
+  "checkpoints": [
+    {
+      "phase": "55",
+      "name": "Autonomous SAG Network v1.0.0 Final Release",
+      "status": "LOCKED",
+      "evidence_scope": "software/research testbed with synthetic/offline benchmark evidence",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "56",
+      "name": "Real-World Data Acquisition",
+      "status": "LOCKED",
+      "evidence_scope": "verified public OPS-SAT telemetry acquisition",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "57",
+      "name": "Dataset Provenance & Quality",
+      "status": "LOCKED",
+      "evidence_scope": "public-data provenance and deterministic quality profiling",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "58",
+      "name": "Multi-Source Telemetry Fusion",
+      "status": "LOCKED",
+      "evidence_scope": "synthetic multi-source fusion with preserved provenance",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "59",
+      "name": "Real-Time Data Ingestion",
+      "status": "LOCKED",
+      "evidence_scope": "synthetic/local/public telemetry ingestion paths",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "60",
+      "name": "Real-Time Data Validation",
+      "status": "LOCKED",
+      "evidence_scope": "deterministic telemetry boundary validation",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "61",
+      "name": "Real-Data Model Training",
+      "status": "LOCKED",
+      "evidence_scope": "verified public OPS-SAT real-data training",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "62",
+      "name": "Real-Data Baseline Comparison",
+      "status": "LOCKED",
+      "evidence_scope": "verified public OPS-SAT baseline comparison",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "63",
+      "name": "Real-World Uncertainty Calibration",
+      "status": "LOCKED",
+      "evidence_scope": "verified public OPS-SAT uncertainty calibration",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "64",
+      "name": "Real Failure Intelligence",
+      "status": "LOCKED",
+      "evidence_scope": "verified public OPS-SAT failure-intelligence evaluation",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "65",
+      "name": "Real-World Domain Shift Detection",
+      "status": "LOCKED",
+      "evidence_scope": "verified public OPS-SAT domain-shift evaluation",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "66",
+      "name": "Real-World Online Model Adaptation",
+      "status": "LOCKED",
+      "evidence_scope": "verified public OPS-SAT online adaptation replay",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "67",
+      "name": "Physical SDR Integration",
+      "status": "LOCKED",
+      "evidence_scope": "RX-only SDR software boundary; no physical hardware claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "68",
+      "name": "Physical RF Measurement",
+      "status": "LOCKED",
+      "evidence_scope": "synthetic normalized RF measurement; no calibrated hardware claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "69",
+      "name": "Physical Wireless Link",
+      "status": "LOCKED",
+      "evidence_scope": "software wireless-link boundary; no physical RF claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "70",
+      "name": "Real Network Telemetry Loop",
+      "status": "LOCKED",
+      "evidence_scope": "synthetic and localhost telemetry transport; no external-network claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "71",
+      "name": "Hardware Edge Deployment",
+      "status": "LOCKED",
+      "evidence_scope": "synthetic/local-host edge execution; no dedicated field-edge claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "72",
+      "name": "Hardware + SDR Closed Loop",
+      "status": "LOCKED",
+      "evidence_scope": "software closed loop with optional RX boundary; no TX/physical actuation claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "73",
+      "name": "Ground Segment Integration",
+      "status": "LOCKED",
+      "evidence_scope": "ground-network fixtures with public replay; no measured field infrastructure claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "74",
+      "name": "Air Segment Integration",
+      "status": "LOCKED",
+      "evidence_scope": "UAV/HAPS deterministic fixtures with public replay; no field deployment claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "75",
+      "name": "Space Segment Data Integration",
+      "status": "LOCKED",
+      "evidence_scope": "public ISS/ZARYA SGP4 ephemeris plus public-data replay; no measured space link claim",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "76",
+      "name": "Cross-Domain SAG Network",
+      "status": "LOCKED",
+      "evidence_scope": "cross-domain software integration; deterministic Ground/Air fixtures and public ephemeris",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "77",
+      "name": "Real Closed-Loop Autonomy",
+      "status": "LOCKED",
+      "evidence_scope": "software closed-loop autonomy; no physical network actuation",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "78",
+      "name": "Real-World Resilience Campaign",
+      "status": "LOCKED",
+      "evidence_scope": "software-side resilience/fault injection campaign",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "79",
+      "name": "Autonomous SAG Validation",
+      "status": "LOCKED",
+      "evidence_scope": "repeatable software/research validation consolidation",
+      "physical_deployment_claim": false
+    },
+    {
+      "phase": "46",
+      "name": "Security Hardening",
+      "status": "SKIPPED",
+      "evidence_scope": "explicitly skipped by project scope",
+      "physical_deployment_claim": false
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "checkpoint-56-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 56 must have a status record in the final source tree.",
+      "fingerprint": "97372ffef8d2cfa840eb2c3cf8602db0bae6ab6b39486ef5ef2b852d2cbbb926"
+    },
+    {
+      "check_id": "checkpoint-57-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 57 must have a status record in the final source tree.",
+      "fingerprint": "98dc8ce589a7e9b468216c502a64e820bfbae75d1a88e2181604b7be8e516b4c"
+    },
+    {
+      "check_id": "checkpoint-58-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 58 must have a status record in the final source tree.",
+      "fingerprint": "3d83b590716b24ecf711ce4b31b5f767b13b21ddffb6a42723c301d664a7cbf7"
+    },
+    {
+      "check_id": "checkpoint-59-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 59 must have a status record in the final source tree.",
+      "fingerprint": "aa06d0fc838f097b94cbcf8b263bbf09d50c0cf5da46dcc5a65c0dbfbe7be9da"
+    },
+    {
+      "check_id": "checkpoint-60-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 60 must have a status record in the final source tree.",
+      "fingerprint": "066f8bc21f5bc11d55e9d56cf285ee2ff8db3032c9b01d816f470d05a35378f9"
+    },
+    {
+      "check_id": "checkpoint-61-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 61 must have a status record in the final source tree.",
+      "fingerprint": "d11039fbd7aeca12c47b29949dc89c84ce5810b55052e639d68d52f0b7fdc319"
+    },
+    {
+      "check_id": "checkpoint-62-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 62 must have a status record in the final source tree.",
+      "fingerprint": "0fe2e5cd68d1df34b75fa98a738240aed63071180fb4224483547f4b73131824"
+    },
+    {
+      "check_id": "checkpoint-63-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 63 must have a status record in the final source tree.",
+      "fingerprint": "02cf0ebf5afc75835e65370554e143e24b575971f3e4edf2ee15d76e1b99a50c"
+    },
+    {
+      "check_id": "checkpoint-64-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 64 must have a status record in the final source tree.",
+      "fingerprint": "c3aa6e8e1e65112ccb6d5be862d7ad33a4479f9be838729501cefd0b927692db"
+    },
+    {
+      "check_id": "checkpoint-65-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 65 must have a status record in the final source tree.",
+      "fingerprint": "a0ab89f5a059ee5be2719cd713f1303936f5ca485a79da9d6babf7b3059c1ea5"
+    },
+    {
+      "check_id": "checkpoint-66-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 66 must have a status record in the final source tree.",
+      "fingerprint": "cfcc0f7d0194a90a6989fb9c4baf4c6a3a515a2b291d5b2b1e0f403eb6bdeefb"
+    },
+    {
+      "check_id": "checkpoint-67-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 67 must have a status record in the final source tree.",
+      "fingerprint": "eefeb399a5114a74ee97a3debf4624f83a48df8bac4e76d41d42339107ffd8c2"
+    },
+    {
+      "check_id": "checkpoint-68-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 68 must have a status record in the final source tree.",
+      "fingerprint": "a14dff7176092204548727fc17d2fe40097f0c58fd443da9d259969f3e8d8232"
+    },
+    {
+      "check_id": "checkpoint-69-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 69 must have a status record in the final source tree.",
+      "fingerprint": "dcab93893f2f1973d9ddaea694b8a9f564831d5211a15b90fbe9dddfdc10adeb"
+    },
+    {
+      "check_id": "checkpoint-70-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 70 must have a status record in the final source tree.",
+      "fingerprint": "e6f019c5c94bff79bef06809fdd5c5da16032e3e10a7d2fc66728cbdfabf686c"
+    },
+    {
+      "check_id": "checkpoint-71-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 71 must have a status record in the final source tree.",
+      "fingerprint": "845ba5d72bf5c55f5334698f17368fd0e373ca0d75e647cb26ebe5f89dbf1af8"
+    },
+    {
+      "check_id": "checkpoint-72-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 72 must have a status record in the final source tree.",
+      "fingerprint": "7a916bfaf040ab54599b5bd72c6f5c4b4e00172df63803b481f19a26debd7fe1"
+    },
+    {
+      "check_id": "checkpoint-73-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 73 must have a status record in the final source tree.",
+      "fingerprint": "49a2fce5328d050fe2714123199dafb2118ba841e001b74e654c673fb0d6a792"
+    },
+    {
+      "check_id": "checkpoint-74-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 74 must have a status record in the final source tree.",
+      "fingerprint": "eb929240ed650bbd5472aa4500c47ee33e9489e6f33aeb44450971fa47a4b6ae"
+    },
+    {
+      "check_id": "checkpoint-75-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 75 must have a status record in the final source tree.",
+      "fingerprint": "f62c539619dddb1d919369c2c938fe2e85159d3716d3f2d52dddfcd7af2da0c7"
+    },
+    {
+      "check_id": "checkpoint-76-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 76 must have a status record in the final source tree.",
+      "fingerprint": "4a01713b12fa453db81e7a1e18509065a593faf7cbed9e24171b8c43eec1b8c4"
+    },
+    {
+      "check_id": "checkpoint-77-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 77 must have a status record in the final source tree.",
+      "fingerprint": "59daa4faa00e57df0283fb4180af40050aea0298d5cfe995948fac1c09c9a302"
+    },
+    {
+      "check_id": "checkpoint-78-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 78 must have a status record in the final source tree.",
+      "fingerprint": "0ae67881d2378b8c447bd3acefec61300b5b0f9ddef8f3957af7761eb8dfd1aa"
+    },
+    {
+      "check_id": "checkpoint-79-recorded",
+      "status": "pass",
+      "observed": "present",
+      "expected": "checkpoint status file present",
+      "detail": "Phase 79 must have a status record in the final source tree.",
+      "fingerprint": "963f5694a5fbf5d510d7ab02c4c0919d92e71aedfefa7c985faff2156821b2a5"
+    },
+    {
+      "check_id": "v1-baseline",
+      "status": "pass",
+      "observed": "present",
+      "expected": "Phase 55 v1.0.0 release manifest present",
+      "detail": "The v2.0 release preserves the prior v1.0.0 release manifest as the historical baseline.",
+      "fingerprint": "01fee9487701a5b9daeb3696a0568a6581b79022b287a935750505f1bc55132d"
+    },
+    {
+      "check_id": "release-structure",
+      "status": "pass",
+      "observed": "['README.md', 'LICENSE', 'pyproject.toml', 'release_manifest.json', 'src/sag_network/final_release/models.py', 'src/sag_network/final_release/engine.py', 'scripts/run_phase80_final_release.py']",
+      "expected": "['README.md', 'LICENSE', 'pyproject.toml', 'release_manifest.json', 'src/sag_network/final_release/models.py', 'src/sag_network/final_release/engine.py', 'scripts/run_phase80_final_release.py']",
+      "detail": "Final release must contain its manifest, source, script, and project metadata.",
+      "fingerprint": "abaa499a38b8e788cd94cc834e57ad537447d04d84432fd7cd02f2c880c062ad"
+    },
+    {
+      "check_id": "artifact-exclusion",
+      "status": "pass",
+      "observed": "508",
+      "expected": "0",
+      "detail": "Release collection excludes Python bytecode and development caches from the packaged artifact.",
+      "fingerprint": "8c093dca0ebd7c15df219328f8bdd03cd063d59cc5ef71ad36b01d90dbf5b553"
+    },
+    {
+      "check_id": "evidence-boundary",
+      "status": "pass",
+      "observed": "True",
+      "expected": "True",
+      "detail": "The v2.0 release records software, synthetic, public-data, and public-ephemeris evidence without converting it into a physical deployment claim.",
+      "fingerprint": "49697305fea99139c171978bf0a10ea0568b18f31d3f8eeec925a11d0c3633cf"
+    },
+    {
+      "check_id": "network-boundary",
+      "status": "pass",
+      "observed": "False",
+      "expected": "False",
+      "detail": "The final release itself does not mutate external network infrastructure.",
+      "fingerprint": "6b368b2bf11c1a3a80c85442ff650bbb99af446394d21665bd6eaec0217cd8f0"
+    },
+    {
+      "check_id": "hardware-boundary",
+      "status": "pass",
+      "observed": "False",
+      "expected": "False",
+      "detail": "The final release does not claim or perform physical RF/hardware actuation as part of release assembly.",
+      "fingerprint": "5a6c020bce151be16bb960ad76e0b3d0002187d33bab5919b45a491c495c3497"
+    }
+  ],
+  "locked_checkpoint_count": 25,
+  "skipped_checkpoint_count": 1,
+  "source_file_count": 266,
+  "test_file_count": 82,
+  "release_tree_fingerprint": "c74ecc54f86e259d08397888bf87cae64fc2ed2c2a117f7562707d866a4b03d0",
+  "checkpoint_matrix_fingerprint": "888f73fe303fc4eda58a9599c9c9b7bc80bdce621c639b50454b07c993044a1d",
+  "evidence_boundary_clean": true,
+  "network_mutation": false,
+  "hardware_measurement": false,
+  "deterministic": true,
+  "release_fingerprint": "be0ad71888ef814c7facedf0dab900942698c02c6eac95f158c42a478933b46a"
+}

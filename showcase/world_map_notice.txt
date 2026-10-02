@@ -1,0 +1,1 @@
+The bundled world_map.png is a static geographic reference generated from the Basemap/Natural Earth coastline data available in the build environment. It is used only as a basemap; network state, links, coordinates, telemetry, decisions, and events come from the SAG project runtime.

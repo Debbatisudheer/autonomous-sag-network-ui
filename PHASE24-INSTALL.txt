@@ -1,0 +1,10 @@
+PHASE 24 — FINAL AUTONOMOUS SAG PLATFORM
+
+Use the complete project archive. Run:
+
+ruff check .
+mypy src
+pytest
+python scripts\run_phase24_autonomous_sag_platform.py
+
+Security Phase 21 remains deferred by project decision.

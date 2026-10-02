@@ -1,0 +1,21 @@
+Phase 13 quality patch
+
+Replace these two files in the current canonical project:
+  src/sag_network/resource/scheduler.py
+  scripts/run_phase13_resource_management.py
+
+No other existing project files are changed.
+
+Reason:
+- fixes the mypy candidate-variable narrowing issue in scheduler.py
+- fixes the Ruff import-order issue in the Phase 13 demo script
+
+Validation against the Phase 12 corrected baseline + Phase 13 overlay:
+- pytest: 102 passed
+- Python compilation: OK
+
+After copying the two files, run:
+  ruff check .
+  mypy src
+  pytest
+  python scripts\run_phase13_resource_management.py

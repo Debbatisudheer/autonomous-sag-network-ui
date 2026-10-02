@@ -1,0 +1,15 @@
+PHASE 28 INSTALL / VALIDATION
+
+Baseline:
+- Use the complete Phase 27 final-clean-complete codebase.
+
+Validation commands from the repository root:
+
+ruff check .
+mypy src
+pytest
+python scripts\run_phase28_higher_fidelity_channel.py
+
+Expected test count after Phase 28 additions: 315 tests.
+
+No new third-party dependency is required beyond the Phase 27 dependency set.

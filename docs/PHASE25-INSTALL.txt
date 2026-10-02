@@ -1,0 +1,15 @@
+PHASE 25 - REAL EPHEMERIS INSTALLATION
+
+This phase adds the real SGP4 dependency.
+
+1. From the project root, inside the existing virtual environment:
+   python -m pip install -e ".[dev]"
+
+2. Validate:
+   ruff check .
+   mypy src
+   pytest
+   python scripts\run_phase25_real_ephemeris.py
+
+The bundled data/ephemeris/iss-zarya.tle is a point-in-time real TLE fixture for ISS (ZARYA), NORAD 25544.
+For a fresh operational run, retrieve a current GP element set using the CelesTrak client or replace the fixture.

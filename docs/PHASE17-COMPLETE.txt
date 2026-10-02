@@ -1,0 +1,9 @@
+Phase 17 — Predictive Intelligence
+
+Complete codebase includes all prior validated phases plus the additive predictive-intelligence subsystem.
+
+Validation target:
+- Ruff clean
+- mypy clean
+- full pytest green
+- Phase 17 demo deterministic

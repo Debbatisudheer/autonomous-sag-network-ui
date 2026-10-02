@@ -1,0 +1,2 @@
+timestamp,channel,value,label,segment,sampling,train,test
+2026-01-01T00:00:03Z,temp,23.2,temperature,seg-a,1Hz,true,false

@@ -1,0 +1,14 @@
+Phase 19 — Optimization & Autonomous Control
+
+Implemented:
+- deterministic constrained optimization over Phase 18 decisions
+- explicit objective configuration and resource constraints
+- simulation-side autonomous control execution
+- control-state versioning and carry-forward state
+- post-action verification
+- closed-loop optimization/reporting
+- Phase 19 tests and demonstration
+
+Boundary:
+- control actions mutate the software testbed control state
+- no claim of physical 6G/NTN/RAN command execution

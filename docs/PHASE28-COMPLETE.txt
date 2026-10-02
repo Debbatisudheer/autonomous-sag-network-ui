@@ -1,0 +1,28 @@
+PHASE 28 — HIGHER-FIDELITY WIRELESS / NTN CHANNEL
+
+Status: Implemented
+Baseline: Phase 27 final-clean-complete
+
+Added:
+- Dedicated stateful deterministic NTN channel model package.
+- 3GPP TR 38.811 elevation-dependent LOS probabilities.
+- 3GPP TR 38.811 shadow-fading and NLOS clutter tables for S/Ka bands.
+- Per-link correlated shadow fading.
+- Doppler-derived coherence-time model.
+- Correlated Rician LOS / Rayleigh NLOS fast fading.
+- Explicit geometry-scaled gas/rain/cloud attenuation inputs.
+- Scintillation and building-entry input terms.
+- LinkBudget integration.
+- Real SGP4 satellite-link integration.
+- Unified-candidate channel application helper.
+- Deterministic channel fingerprinting, tests, and Phase 28 demo.
+
+Model boundary:
+- Not a complete 3GPP NR PHY or full TR 38.811 link-level channel.
+- Weather attenuation inputs are scenario/external-adapter values; full ITU-R site-climate algorithms remain a later fidelity extension.
+- Full TDL/CDL, antenna-array spatial filtering, polarization/XPD, ray tracing, and receiver impairments remain outside this phase.
+
+References:
+- 3GPP TR 38.811 NTN channel model, especially Sections 6.6.1 and 6.6.2.
+- ITU-R P.618-14 Earth-space propagation.
+- ITU-R P.676-13 atmospheric gaseous attenuation.

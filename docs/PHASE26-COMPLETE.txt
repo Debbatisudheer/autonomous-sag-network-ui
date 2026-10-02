@@ -1,0 +1,14 @@
+PHASE 26 — REAL GROUND GEOSPATIAL DATA
+
+Implemented:
+- GeoJSON point-site ingestion with provenance
+- OSM Nominatim search adapter with explicit low-rate client behavior
+- USGS 3DEP point-elevation adapter boundary
+- deterministic dataset/site fingerprinting
+- geospatial site -> existing GroundNetwork builder
+- elevation enrichment model
+- deterministic offline reference fixture
+- phase tests and documentation
+
+Important boundary:
+The bundled India GeoJSON contains city-reference points for deterministic testing. It is not a telecom-tower inventory. Real ground infrastructure should be loaded from identified OSM/Overpass or operator/open-data sources.

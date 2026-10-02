@@ -1,0 +1,5 @@
+[
+  {"record_id": "phase31-r1", "timestamp_s": 1.0, "sequence": 1, "source_id": "sat-1", "domain": "space", "metric": "sinr_db", "value": 8.0, "unit": "dB", "quality": "good", "metadata": {"provenance_sha256": "synthetic-phase31"}},
+  {"record_id": "phase31-r2", "timestamp_s": 2.0, "sequence": 2, "source_id": "sat-1", "domain": "space", "metric": "sinr_db", "value": 7.5, "unit": "dB", "quality": "good", "metadata": {"provenance_sha256": "synthetic-phase31"}},
+  {"record_id": "phase31-r3", "timestamp_s": 12.0, "sequence": 3, "source_id": "uav-1", "domain": "air", "metric": "latency_ms", "value": 14.0, "unit": "ms", "quality": "good", "metadata": {"provenance_sha256": "synthetic-phase31"}}
+]

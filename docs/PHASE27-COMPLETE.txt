@@ -1,0 +1,7 @@
+Phase 27 — Real UAV/HAPS Mobility Data
+
+Added external aerial trajectory ingestion for JSONL, CSV, and timestamped GeoJSON; WGS84-based trajectory validation; UTC normalization; local kinematics; bounded interpolation; provenance/fingerprinting; and projection into the existing AirNetwork/AirPlatform contract.
+
+Real external UAV source supported: ORION drone trajectory repository (real drone flight data). The project does not redistribute the upstream full dataset.
+
+HAPS is supported by the same external trajectory contract but no real HAPS dataset is bundled or claimed.

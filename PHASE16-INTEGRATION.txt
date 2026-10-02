@@ -1,0 +1,28 @@
+PHASE 16 — TELEMETRY & REAL-TIME STATE
+
+This is an ADDITIVE OVERLAY for the already-clean Phase 15 canonical repository.
+
+Copy/extract these files into the root of your existing project. Do NOT replace the
+existing Phase 1–15 files with an older archive.
+
+Added/updated files:
+  src/sag_network/telemetry/models.py
+  src/sag_network/telemetry/state.py
+  src/sag_network/telemetry/generator.py
+  src/sag_network/telemetry/bridge.py
+  src/sag_network/telemetry/__init__.py
+  tests/test_telemetry.py
+  scripts/run_phase16_telemetry.py
+  docs/phase-16.md
+
+Validation performed on this Phase 16 implementation:
+  pytest: 142 passed
+  compileall: passed
+
+Run from your canonical repository after extraction:
+  ruff check .
+  mypy src
+  pytest
+  python scripts\run_phase16_telemetry.py
+
+Phase 16 must preserve all previously validated Phase 1–15 behavior.
