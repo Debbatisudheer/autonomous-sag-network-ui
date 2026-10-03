@@ -10,10 +10,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-physical-sdr = [
-  "numpy>=1.26,<3",
-  "SoapySDR>=0.8,<1",
-]
 dev = [
   "pytest>=8,<9",
   "ruff>=0.6,<1",
@@ -40,6 +36,7 @@ known-first-party = ["sag_network"]
 from-first = false
 force-sort-within-sections = false
 order-by-type = false
+
 [tool.ruff.lint.per-file-ignores]
 "scripts/run_phase13_resource_management.py" = ["I001"]
 "scripts/run_phase14_interference.py" = ["I001"]
@@ -56,4 +53,3 @@ order-by-type = false
 "tests/test_ephemeris.py" = ["I001"]
 "src/sag_network/trajectory/models.py" = ["I001"]
 "tests/test_trajectory.py" = ["I001"]
-
