@@ -1,5 +1,8 @@
-from __future__ import annotations
+from http.server import BaseHTTPRequestHandler
 
-from showcase.server import Handler
+from showcase.server import Handler as ShowcaseHandler
 
-handler = Handler
+
+class handler(BaseHTTPRequestHandler):
+    send_bytes = ShowcaseHandler.send_bytes
+    do_GET = ShowcaseHandler.do_GET
