@@ -1,8 +1,8 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "services": {
     "app": {
-      "root": "."
+      "root": ".",
+      "entrypoint": "api/[...path].py"
     }
   },
   "rewrites": [
